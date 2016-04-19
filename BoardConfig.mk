@@ -35,8 +35,7 @@ vendor_partition_directory := vendor/bsp/tegra/device/manhack/stock_images
 # parent_directory:file_path. Each vendor partition's full path is
 # parent_directory/file_path. The directory structure in file_path will be
 # preserved.
-BRILLO_VENDOR_PARTITIONS := \
-  $(vendor_partition_directory):partitions/staging.bin
+BRILLO_VENDOR_PARTITIONS := 
 
 BOARD_SEPOLICY_DIRS += \
     device/google/manhack/sepolicy

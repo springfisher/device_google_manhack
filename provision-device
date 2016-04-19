@@ -4,8 +4,6 @@ OS=${ANDROID_PROVISION_OS_PARTITIONS:-${ANDROID_PRODUCT_OUT}}
 VENDOR=${ANDROID_PROVISION_VENDOR_PARTITIONS:-${ANDROID_BUILD_TOP}/vendor/bsp/tegra/device/manhack/stock_images/}
 
 fastboot \
-  flash staging ${VENDOR}/partitions/staging.bin \
-  flash misc ${VENDOR}/partitions/misc.bin \
   flash boot ${OS}/boot.img \
   flash system ${OS}/system.img \
   flash userdata ${OS}/userdata.img "$@"

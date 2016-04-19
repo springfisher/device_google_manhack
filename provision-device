@@ -1,7 +1,7 @@
 #!/bin/bash
 
 OS=${ANDROID_PROVISION_OS_PARTITIONS:-${ANDROID_PRODUCT_OUT}}
-VENDOR=${ANDROID_PROVISION_VENDOR_PARTITIONS:-${ANDROID_BUILD_TOP}/vendor/bsp/google/device/manhack/stock_images/}
+VENDOR=${ANDROID_PROVISION_VENDOR_PARTITIONS:-${ANDROID_BUILD_TOP}/vendor/bsp/tegra/device/manhack/stock_images/}
 
 fastboot \
   flash staging ${VENDOR}/partitions/staging.bin \

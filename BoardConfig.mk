@@ -27,16 +27,16 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 734003200
 TARGET_BOARD_INFO_FILE := device/google/manhack/board-info.txt
 
 PRODUCT_COPY_FILES += \
-    device/google/manhack/fstab:root/fstab.${soc_name}
-#   device/google/manhack/provision-device:provision-device
+    device/google/manhack/fstab:root/fstab.manhack \
+    device/google/manhack/provision-device:provision-device
 
-#vendor_partition_directory := vendor/bsp/google/device/manhack/stock_images
+vendor_partition_directory := vendor/bsp/tegra/device/manhack/stock_images
 # BRILLO_VENDOR_PARTITIONS contains a list of strings in the format of
 # parent_directory:file_path. Each vendor partition's full path is
 # parent_directory/file_path. The directory structure in file_path will be
 # preserved.
-#BRILLO_VENDOR_PARTITIONS := \
-#  $(vendor_partition_directory):partitions/staging.bin
+BRILLO_VENDOR_PARTITIONS := \
+  $(vendor_partition_directory):partitions/staging.bin
 
 BOARD_SEPOLICY_DIRS += \
     device/google/manhack/sepolicy

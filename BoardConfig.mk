@@ -18,7 +18,7 @@
 $(call set_soc, tegra, tegra4)
 
 # Add wifi controlller
-$(call add_peripheral, marvell, wifi/sd8xxx)
+$(call add_peripheral, tegra, wifi/sd8xxx)
 
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1073741824
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 13912506368
